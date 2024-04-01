@@ -8,6 +8,25 @@
 </head>
 <body>
     <h1>Product</h1>
-    <div>index</div>
+    <div>
+        <table border="1">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th>Description</th>
+            </tr>
+            @foreach ($products as $products )
+            <tr>
+                <td>{{$products->id}}</td>
+                <td>{{$products->name}}</td>
+                <td>{{$products->qty}}</td>
+                <td>{{$products->price}}</td>
+                <td>{{$products->description}}</td>
+            </tr>
+                
+            @endforeach
+        </div>
 </body>
 </html>
